@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Project Telescope</title>
+	<title>Project Telescope - FAQ</title>
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -41,6 +41,78 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+<style type="text/css">
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.telescope-img {
+height: 20%;
+position:absolute; 
+z-index: 50;
+}
+
+</style>
 
 	</head>
 	<body>
@@ -58,8 +130,8 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="faq.html">FAQ</a></li>
+							<li> <a href="index.html">Home</a></li>
+							<li class="active"><a href="faq.html">FAQ</a></li>
 <!-- 							<li class="has-dropdown">
 								<a href="blog.html">Blog</a>
 								<ul class="dropdown">
@@ -79,139 +151,85 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-				<img class="telescope-img" src="images/red-roundal.png">
-<br>	
-							<h1>Real-time Security Governance for Enhanced DevSecOps</h1>
-							<h2>An Open Source Project Sponsored by <a href="https://redhat.com/" target="_blank">Red Hat</a></h2>
-							<!-- <p><a class="btn btn-primary btn-lg btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-lg btn-learn">Learn More</a></p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	<div id="fh5co-features">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-hotairballoon"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Logging & Monitoring Security</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
-					</div>
+	
+<section class="faq-container">
+            <div class="faq-one">
 
-					<div class="col-md-4 animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-search"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Data Security</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
+                <!-- faq question -->
+                <h1 class="faq-page">What is Project Telescope?</h1>
 
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-wallet"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Infrastructure Security</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>
+                    Increasingly, organisations find that transformative digital adoption and a growing requirement for security are diametrically opposed, and they are unable to ensure even minimum viable security is effective. This is due to a combination of their inability to keep pace with the scale and speed of modern development, and a reliance on legacy governance mechanisms. 
+<br><br>We have ideated and begun architecting a capability called Project Telescope, which would allow us to automate cyber security governance across disparate ecosystems in a vendor agnostic way. This capability will allow customers to more accurately and rapidly mandate security requirements, visualise compliance to said mandate in real-time, reduce time to go-live for new product development, and enhance security and risk management both at the product development and leadership levels.
+
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How do I join the Project?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
 
 
-				<div class="row">
-					<div class="col-md-4 animate-box">
+				<div class="faq-three">
 
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-wine"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Code Security</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
+                <!-- faq question -->
+                <h1 class="faq-page">How do I join the Project?</h1>
 
-					</div>
+                <!-- faq answer -->
 
-					<div class="col-md-4 animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-genius"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Integration Security</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
 
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-chat"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Getting Involved</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div id="fh5co-wireframe">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Project Details</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-5 animate-box">
-					<div class="user-frame">
-						<h3>Overview</h3>
-						<p>Insert High Level Overview
-</p>
-					</div>
-				</div>
-				<div class="col-md-7 animate-box">
-					<p>
-					Increasingly, organisations find that transformative digital adoption and a growing requirement for security are diametrically opposed, and they are unable to ensure even minimum viable security is effective. This is due to a combination of their inability to keep pace with the scale and speed of modern development, and a reliance on legacy governance mechanisms. 
+            <div class="faq-four">
+                <!-- faq question -->
+                <h1 class="faq-page">Question 4</h1>
 
-We have ideated and begun architecting a capability called Project Telescope, which would allow us to automate cyber security governance across disparate ecosystems in a vendor agnostic way. This capability will allow customers to more accurately and rapidly mandate security requirements, visualise compliance to said mandate in real-time, reduce time to go-live for new product development, and enhance security and risk management both at the product development and leadership levels.
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+				<hr class="hr-line">
+				<div class="faq-five">
+                <!-- faq question -->
+                <h1 class="faq-page">Question 5</h1>
 
-The project will aim to focus on 5 specific domains but the aim is for it to be extensible so customers can add their own domains which are relevant to their specific needs.
-
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+        </section>
 	
 
 	<!-- <div id="fh5co-blog">
@@ -343,7 +361,26 @@ The project will aim to focus on 5 specific domains but the aim is for it to be 
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+<script type="text/javascript" >
+var faq = document.getElementsByClassName("faq-page");
+var i;
 
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("faq-active");
+
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}    
+    </script>
 	</body>
 </html>
 
