@@ -1229,4 +1229,10 @@ input[type="text"] {
 
 }
 
+.telescope-img {
+margin-top: -150px;
+height: 20%;
+z-index: 50;
+}
+
 /*# sourceMappingURL=style.css.map */
